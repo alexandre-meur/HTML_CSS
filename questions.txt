@@ -1,0 +1,98 @@
+*** Partie 1 ***
+
+	* Quelle différence constatez-vous ?
+	Comment l'expliquez-vous ?
+
+	Il n'y a aucune mise en forme car il n'y a pas de balise.
+
+	* Ajouter une balise <title> pour décrire le nom que devra afficher le
+	navigateur dans son onglet.
+	Quel titre avez-vous choisi ?
+
+	Recette de cuisine
+
+	* Baliser les titres de la page de la recette de cuisine.
+	Quelle balises avez-vous choisies ?
+
+	h1, h2 et h3
+
+	* Baliser les listes et les paragraphes de la page de la recette de cuisine.
+	Quelle balises avez-vous choisies ?
+
+	<p> pour les paragraphes et <ul> pour la liste d'ingrédients et <ol> pour les différentes étapes de préparation
+
+	* Pensez-vous que votre code respecte la norme w3c ?
+	Combien d'erreurs à votre avis ?
+
+	Non, il manquait le doctype ainsi que es balises <html>, <head> et <body>
+
+	* Ajouter l'attribut lang sur la balise <html>
+	Quelle valeur lui donner ?
+	A quoi sert cet attribut ?
+
+	Valeur : fr
+	Il définit le langage de la page.
+	
+*** Partie 2 ***
+
+	* Vous devriez pouvoir voir 8 pixels de votre nappe tout autour de votre contenu.
+	Comment l'expliquez-vous ?
+	Comment l'enlever ?
+
+	Il y a une marge par defaut dans body
+	en ajoutant margin:0px; comme règle css pour body
+
+	* Savez-vous pourquoi votre contenu est centré ?
+
+	La marge auto s'adapte pour centrer le contenu comme on a mis une largeur.
+	
+*** Partie 3 ***
+
+	* Avec quel élément l'image rentre-t-elle en conflit ?
+	Que se passerait-il si on allongeait le titre ?
+	Exemple "Ingrédients qu'il vous faudra obligatoirement avoir dans vos
+	placards"
+	Savez-vous pourquoi ?
+
+	Avec le titre. L'image est flottante donc elle n'a pas d'emprunte dans le flux.
+
+	* Si c'est le cas, avec quelle valeur ? Quelles sont les arguments pour et
+	contre laisser cet attribut vide ?
+
+	"Photo de tiramisu".
+	Pour : Si l'image n'est pas disponible on a du texte à afficher à la place.
+	Contre : ?
+
+*** Partie 4 ***
+
+	* Cibler le premier titre de niveau 3 pour lui enlever sa marge extérieure
+	vers le haut.
+	Quel sélecteur avez-vous écrit ?
+
+	h3:first-of-type
+
+	* Quelle balise implicite a été ajoutée par le navigateur lors de la création
+	du tableau ?
+	Est-ce que chaque cellule fait la même largeur ?
+	Est-il possible de changer ce comportement ?
+
+	<tbody>
+	Non, les largeurs sont différentes.
+	Oui on peut mettre la proprieté width : 25% sur les cellules <td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
