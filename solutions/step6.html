@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Curriculum Vitae de Daenerys Targaryen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link href="./normalize.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lato|Cinzel+Decorative:400,700,900" rel="stylesheet">
 
@@ -229,6 +230,15 @@
         h3 + p {
             margin-top: 0;
         }
+
+        /* ANIMATION */
+        .animated {
+            transition: all 0.3s;
+        }
+        .invisible {
+            opacity: 0;
+            transform: translateY(50px);
+        }
     </style>
 </head>
 <body>
@@ -265,7 +275,7 @@
             <div class="aside">
                 <h2>Motivations</h2>
             </div>
-            <div class="main">
+            <div class="main" data-animated>
                 <p>
                     Je sais être à la fois ferme et généreuse.
                     Je m'investis dans des projets ambitieux comme faire abolir l'esclavage ou aider les plus malheureux.
@@ -285,7 +295,7 @@
             <div class="aside">
                 <h2>Langues</h2>
             </div>
-            <div class="main">
+            <div class="main" data-animated>
                 <table class="lang">
                     <tr>
                         <th>Valyrien</th>
@@ -305,7 +315,7 @@
                 <h2>Expériences</h2>
             </div>
             <div class="main">
-                <ol class="xp-list">
+                <ol class="xp-list" data-animated>
                     <li>
                         <h3>Héritière du trône de fer</h3>
                         <p>
@@ -338,12 +348,40 @@
             <div class="aside">
                 <h2>Crédits</h2>
             </div>
-            <div class="main">
+            <div class="main" data-animated>
                 <p>Avatar <a href="https://www.deviantart.com/yamaorce/art/Mother-of-Dragons-369124315">©YamaOrce</a>.</p>
             </div>
         </div>
     </div>
 
+    <script>
+        var animatedList = [];
+        Array.from(document.querySelectorAll('[data-animated]')).forEach(function(parent) {
+           Array.from(parent.children).forEach(function(child) {
+               animatedList.push(child);
+               child.classList.add('invisible');
+               child.classList.add('animated');
+           })
+        });
 
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > document.body.clientHeight - window.innerHeight - 50) {
+                animatedList.forEach(function (animated) {
+                    show(animated);
+                });
+            } else {
+                animatedList.forEach(function (animated) {
+                    var rect = animated.getBoundingClientRect();
+                    if (rect.top < window.innerHeight * 2 / 3) {
+                        show(animated);
+                    }
+                });
+            }
+        });
+
+        function show(element) {
+            element.classList.remove('invisible');
+        }
+    </script>
 </body>
 </html>

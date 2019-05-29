@@ -2,54 +2,95 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Recette tiramisu poires spéculoos</title>
+    <title>Curriculum Vitae de Daenerys Targaryen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./normalize.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            background: linear-gradient(to right, #3B7BA7 0%, #3B7BA7 50%, white 50%, white);
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+
+            max-width: 1000px;
+            height: 100%;
+            margin: auto;
+
+        }
+
+        .aside {
+            flex: none;
+            display: flex;
+            align-items: center;
+            width: 300px;
+            padding: 50px;
+            background: #3B7BA7;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            width: 100%;
+        }
+
+        .main {
+            flex: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+
+            background: white;
+        }
+
+        .name {
+            margin: 0;
+            font-family: 'Cinzel Decorative', cursive;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .name-firstname {
+            font-size: 60px;
+        }
+
+        .name-lastname {
+            font-size: 60px;
+            font-weight: 900;
+            color: #7ba73b;
+        }
+
+        .name-title {
+            margin-top: 30px;
+            font-size: 30px;
+            font-weight: normal;
+            color: #939393;
+        }
+    </style>
 </head>
 <body>
-    <h1>Recette tiramisu poires spéculoos</h1>
+    <div class="header">
+        <div class="container">
+            <div class="aside">
+                <img src="avatar.jpg" class="avatar" alt="" />
+            </div>
+            <div class="main">
+                <h1 class="name">
+                    <span class="name-firstname">Daenerys</span>
+                    <span class="name-lastname">Targaryen</span>
+                    <span class="name-title">Briseuse de chaines</span>
+                </h1>
+            </div>
+        </div>
+    </div>
 
-    <p>Comme c'est bientôt l’automne, je vous propose la recette d'un tiramisu parfumé aux poires et aux spéculoos. J’espère que ces saveurs vous plairont, autant qu’elles m’ont plu !</p>
 
-    <h2>Ingrédients (pour ~10 verrines)</h2>
-
-    <ul>
-        <li>1 grosse boîte de poires au sirop</li>
-        <li>Spéculoos (moins d'un paquet)</li>
-        <li>250g de Mascarpone</li>
-        <li>3 oeufs</li>
-        <li>100g de sucre</li>
-        <li>1 sachet de sucre vanillé</li>
-    </ul>
-
-    <h2>Préparation</h2>
-
-    <h3>Étape 1 : les poires</h3>
-
-    <ol>
-        <li>Mettre de côté le sirop des poires.</li>
-        <li>Couper les poires en petits dés.</li>
-    </ol>
-
-    <h3>Étape 2 : la crème</h3>
-
-    <ol>
-        <li>Casser les oeufs en séparant les blancs des jaunes.</li>
-        <li>Monter les blancs en neige en y ajoutant un peu de sel et les mettre de côté.</li>
-        <li>Battre les jaunes d'oeufs puis y ajouter le sucre et le sucre vanillé.</li>
-        <li>Bien mélanger puis incorporer le mascarpone et mélanger.</li>
-        <li>Enfin, ajouter les blancs montés en neige et mélanger jusqu'à ce que la crème soit lisse et homogène.</li>
-    </ol>
-
-    <h3>Étape 3 : le montage</h3>
-
-    <ol>
-        <li>Tremper un spéculoos découpé à la taille de la verrine dans le sirop puis le placer au fond.</li>
-        <li>Recouvrir de crème (environ 2 cm).</li>
-        <li>Disposer une couche de morceaux de poires sur la crème.</li>
-        <li>Remettre un spéculoos trempé dans le sirop, puis une couche de crème puis une couche de poires.</li>
-        <li>Emietter un spéculoos sur le dessus pour faire joli !</li>
-    </ol>
-
-    <p>Bon appétit !</p>
-    <p>Thomas.</p>
 </body>
 </html>
