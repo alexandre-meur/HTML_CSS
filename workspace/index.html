@@ -1,67 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>CV Daenerys Targaryen</title>
+    <title>Mes Ressources Documentaires</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/fond.css" />
+    <link rel="stylesheet" href="style/menu.css" />
+    <link rel="stylesheet" href="style/entete.css" />
+    <link rel="stylesheet" href="style/container.css" />
+    <link rel="stylesheet" href="style/carte.css" />
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body class="page">
     <div class="fond">
-        <div class="container header">
-            <div class="aside">
-                <img src="../assets/avatar.jpg" alt="Photo" class="avatar"/>
+        <div class="menu">
+            <div class="menu__logo">
+                <img src="../assets/logo.svg" alt="logo" class="menu__logoImg" />
+                <p class="menu__logoTitle">Ressources pédagogiques</p>
             </div>
-            <div class="main">
-                <div class="texte">
-                    <h1><span class="prenom">Daenerys</span> <span class="nom">Targaryen</span></h1>
-                    <h1 class="profession">Briseuse de chaines</h1>
+            <div class="menu__profil">
+                <div class="menu__avatarHolder">
+                    <img src="../assets/avatar.jpg" alt="Avatar" class="menu__avatar"/>
+                    <div class="menu__bulleNotification"><p>3</p></div>
                 </div>
-                <table class="cartouche">
-                    <tr>
-                        <th>Age</th>   <th>Lieu</th>   <th>Entreprise</th>   <th>Twitter</th>
-                    </tr>
-                    <tr>
-                        <td>22 ans</td>   <td>Peyredragon</td>   <td>HBO</td>   <td>@Daenerys</td>
-                    </tr>
-                </table>
+                <p class="menu__identite">Marie Thompson</p>
+                <div class="menu__notifications">
+                    <p>Vous avez un nouveau message</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="fond">
-        <div class="container motivations">
-            <div class="aside">
-                <h2>Motivations</h2>
+
+        <div class="container">
+            <div class="entete">
+                <h1 class="entete__titre">Ressource HTML et CSS</h1>
+                <h2 class="entete__sousTitre">Tout pour savoir faire de belles pages web</h2>
             </div>
-            <div class="main">
-                <p>Je sais être à la fois ferme et généreuse.
-                Je m'investis dans des projets ambitieux comme faire abolir l'esclavage ou aider les plus malheureux.
-                Mais je sais aussi punir sévèrement les personnes qui me font du tort.</p>
-                
-                <p>En plus de mon leadership naturel, certains de mes dons peuvent être utiles.
-                Par exemple, je dispose d'une résistance naturelle au feu et à la chaleur grâce au sang de dragon qui coule dans mes veines.
-                Ah, et j'ai des dragons aussi.</p>
-                
-                <p>Je recherche actuellement un poste de reine ou de chef des armées.</p>
+            <div class="carte">
+                <div class="carte__iconeCercle carte__iconeCercle--blue">
+                    <img src="../assets/quick-start.svg" alt="Quick start" class="carte__icone"/>
+                </div>
+                <div>
+                    <h3 class="carte__titre">Commencer avec HTML & CSS</h3>
+                    <p class="carte__description">Les outils et les tutoriels pour s'y mettre</p>
+                </div> 
             </div>
-        </div>
-    </div>
-    <div class="fond">
-        <div class="container langues">
-            <div class="aside">
-                <h2>Langues</h2>
-            </div>
-            <div class="main">
-                <table class="languesTab">
-                    <tr class="ligneTabLangues">
-                        <th>Valyrien</th>   <td class="underline"></td>   <td class="langSkill">Langue maternelle</td>
-                    </tr>
-                    <tr>
-                        <th>Dothraki</th>   <td class="underline"></td>   <td class="langSkill">Courant</td>
-                    </tr>
-                </table>
+            <div class="carte">
+                <div class="carte__iconeCercle carte__iconeCercle--red">
+                    <img src="../assets/responsive.svg" alt="Responsive" class="carte__icone"/>
+                </div>
+                <div>
+                    <h3 class="carte__titre">Gérer le responsive</h3>
+                    <p class="carte__description">De la théorie aux bonnes pratiques</p>
+                </div> 
             </div>
         </div>
     </div>

@@ -1,0 +1,19 @@
+
+.entete{
+    padding:40px 0;
+}
+
+.entete__titre{
+    font-size: 40px;
+}
+
+.entete__sousTitre{
+    font-size:20px;
+    color: #B4B4B4;
+}
+
+@media(max-width: 600px){
+    .entete{
+        text-align: center;
+    }
+}
